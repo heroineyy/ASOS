@@ -58,7 +58,6 @@ def check_exists_by_xpath(driver, xpath):
 #start of the main function, the input is the category page url
 
 def crawl(page_url):
-#     driver = webdriver.PhantomJS()
     driver = webdriver.Firefox()
     driver.get(page_url)
 #     try:
@@ -94,8 +93,8 @@ def crawl(page_url):
     driver.quit()
     
 
-product_url_txt = open('C:/Users/Administrator/Desktop/product_url_women.txt', 'a')
-file = open("C:/Users/Administrator/Desktop/asos_category_url.txt")
+# product_url_txt = open('C:/Users/Administrator/Desktop/product_url_women.txt', 'a')
+file = open("D:/Python_project/ASOS/url")
 # url = 'http://www.hm.com/hk/en/product/54618?article=54618-B'
 lines = file.readlines()
 file.close()
